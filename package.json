@@ -7,8 +7,8 @@
     "node": ">16.x"
   },
   "scripts": {
-    "start": "NODE_ENV=production node index",
-    "dev": "NODE_ENV=development nodemon index"
+    "start": "node index",
+    "dev": "nodemon index"
   },
   "dependencies": {
     "bcrypt": "^5.1.1",
