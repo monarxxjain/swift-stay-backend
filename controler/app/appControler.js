@@ -62,7 +62,7 @@ const getHotels = async function (req, res) {
       options: { sort: { minStay: 1, maxStay: -1 } },
     };
 
-    const result = await Hotel.find(query)
+    const result = await Hotel.find()
       .sort({ priority: 1, "offers.lowestOfferPrice": 1 })
       .populate(populateOptions);
 
